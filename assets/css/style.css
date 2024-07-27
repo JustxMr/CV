@@ -43,7 +43,7 @@ address {
     padding: 25px;
 }
 
-div {
+.sidebar {
     background-color: #782221;
     display: flex;
     flex-wrap: wrap;
