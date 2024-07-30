@@ -80,6 +80,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     width: 25%;
+    height: 920px;
     color: white;
 }
 
@@ -98,23 +99,20 @@ main {
     width: 280px;
 }
 
-#interest {
-    height: 550px;
-}
 /* Utilisation de Position relative suite a une mauvaise compréhension de FlexBox
 Je dois réviser encore ! ACD */
 #main__content {
     color: black;
     position: relative;
-    left: 120%;
-    bottom: 740px;
+    left: 118%;
+    bottom: 400px;
     height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-#main__content > h3 {
+#main__content > div > h3 {
     border: 10px solid #782221;
     border-bottom: 0;
     border-right: 0;
@@ -123,6 +121,13 @@ Je dois réviser encore ! ACD */
     background-color: #dbc2a4;
     display: flex;
     width: 750px;
+}
+
+#professionnal:hover, #formation:hover, #skills:hover {
+    border: 5px solid #782221;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
 }
 
 footer {
