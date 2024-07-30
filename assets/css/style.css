@@ -1,28 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
 body {
+    font-family: "Raleway";
     width: 1160px;
     margin-top: 0;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url('../font/Lato.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
 }
 
 header{
     background-color: #782221;
     color: white;
-    padding: 40px;
+    padding: 10px;
+    flex-direction: row;
 }
 
 a {
     color: white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-header > figure > img {
+a:hover {
+    text-decoration: underline;
+}
+
+header > figure > a > img {
     height: 150px;
     width: 150px;
     display: flex;
     border-radius: 50%;
+    box-shadow: 0px 0px 20px black;
     position: relative;
-    left: 430px;
+    left: 460px;
+}
+header > figure > a > img:hover {
+    cursor: zoom-in;
 }
 
 header > h1 {
@@ -40,4 +65,100 @@ address {
     justify-content: space-between;
     background-color: #2c1d27;
     padding: 25px;
+}
+
+main {
+    border: 1px solid;
+    border-bottom: 0;
+    border-left: 0;
+    border-top: 0;
+}
+
+.sidebar {
+    background-color: #782221;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 26%;
+    height: 920px;
+    color: white;
+}
+
+.title__left {
+    background-color: #dbc2a4;
+    width: 250px;
+    color: black;
+    padding-left: 20px;
+}
+
+#about > p {
+    text-indent: 30px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    line-height: 25px;
+}
+
+/* Utilisation de Position relative suite a une mauvaise compréhension de FlexBox
+Je dois réviser encore ! ACD */
+#main__content {
+    color: black;
+    position: relative;
+    left: 118%;
+    bottom: 460px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main__content > div > h3 {
+    border: 10px solid #782221;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 0;
+    padding: 5px;
+    background-color: #dbc2a4;
+    display: flex;
+    width: 750px;
+}
+
+#professionnal:hover, #formation:hover, #skills:hover {
+    border: 5px solid #782221;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+footer {
+    background-color: #782221;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer__content p {
+    margin: 0;
+}
+
+#social__icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#social__icons img {
+    width: 34px;
+    height: 34px;
+}
+
+#social__icons > a:hover {
+    opacity: 0.5;
 }
